@@ -1,0 +1,191 @@
+{
+  "version": 1,
+  "counters": {
+    "CU": 3,
+    "SV": 3,
+    "PR": 2,
+    "IQ": 3,
+    "RQ": 3
+  },
+  "customers": [
+    {
+      "id": "CU-001",
+      "name": "Aarav Sharma",
+      "kind": "Individual",
+      "email": "aarav.sharma@example.com",
+      "phone": "+91 98765 10001",
+      "city": "Indore",
+      "created": "2026-11-01"
+    },
+    {
+      "id": "CU-002",
+      "name": "Bright Future Academy",
+      "kind": "Business",
+      "email": "contact@brightfuture.example",
+      "phone": "+91 98765 10002",
+      "city": "Bhopal",
+      "created": "2026-11-01"
+    },
+    {
+      "id": "CU-003",
+      "name": "Sara Khan",
+      "kind": "Individual",
+      "email": "sara.khan@example.com",
+      "phone": "+91 98765 10003",
+      "city": "Indore",
+      "created": "2026-11-02"
+    }
+  ],
+  "services": [
+    {
+      "id": "SV-001",
+      "name": "Website Development",
+      "category": "Development",
+      "description": "Responsive business website development",
+      "price": "15000.00",
+      "delivery_days": 15,
+      "status": "Active",
+      "created": "2026-11-01"
+    },
+    {
+      "id": "SV-002",
+      "name": "UI UX Design",
+      "category": "Design",
+      "description": "Website and mobile app interface design",
+      "price": "8000.00",
+      "delivery_days": 7,
+      "status": "Active",
+      "created": "2026-11-01"
+    },
+    {
+      "id": "SV-003",
+      "name": "Cloud Setup",
+      "category": "Cloud",
+      "description": "Basic cloud deployment and configuration",
+      "price": "6000.00",
+      "delivery_days": 5,
+      "status": "Paused",
+      "created": "2026-11-02"
+    }
+  ],
+  "programs": [
+    {
+      "id": "PR-001",
+      "name": "Python Backend Training",
+      "type": "Training",
+      "description": "Practical Python and API development training",
+      "duration_days": 30,
+      "fee": "2500.00",
+      "seats": 20,
+      "start_date": "2026-11-15",
+      "status": "Open",
+      "enrolled": [
+        "CU-001",
+        "CU-003"
+      ]
+    },
+    {
+      "id": "PR-002",
+      "name": "Web Development Internship",
+      "type": "Internship",
+      "description": "Supervised web development internship program",
+      "duration_days": 45,
+      "fee": "0.00",
+      "seats": 10,
+      "start_date": "2026-12-01",
+      "status": "Open",
+      "enrolled": [
+        "CU-002"
+      ]
+    }
+  ],
+  "inquiries": [
+    {
+      "id": "IQ-001",
+      "customer_id": "CU-001",
+      "topic": "Service",
+      "reference": "SV-001",
+      "message": "Please share the website development process and timeline.",
+      "priority": "High",
+      "status": "In Progress",
+      "created": "2026-11-02",
+      "updated": "2026-11-03",
+      "resolved_on": "",
+      "notes": [
+        {
+          "date": "2026-11-03",
+          "text": "Shared the initial project timeline with the customer."
+        }
+      ]
+    },
+    {
+      "id": "IQ-002",
+      "customer_id": "CU-002",
+      "topic": "Program",
+      "reference": "PR-002",
+      "message": "We want to know the internship schedule for our team.",
+      "priority": "Medium",
+      "status": "Resolved",
+      "created": "2026-11-02",
+      "updated": "2026-11-04",
+      "resolved_on": "2026-11-04",
+      "notes": [
+        {
+          "date": "2026-11-04",
+          "text": "Sent the internship schedule and program details."
+        }
+      ]
+    },
+    {
+      "id": "IQ-003",
+      "customer_id": "CU-003",
+      "topic": "General",
+      "reference": "",
+      "message": "Please share your office working hours.",
+      "priority": "Low",
+      "status": "New",
+      "created": "2026-11-03",
+      "updated": "2026-11-03",
+      "resolved_on": "",
+      "notes": []
+    }
+  ],
+  "requests": [
+    {
+      "id": "RQ-001",
+      "customer_id": "CU-001",
+      "service_id": "SV-001",
+      "details": "Create a five-page responsive business website.",
+      "quote": "15000.00",
+      "status": "Approved",
+      "requested_on": "2026-11-02",
+      "due_date": "2026-11-20",
+      "updated": "2026-11-03",
+      "completed_on": ""
+    },
+    {
+      "id": "RQ-002",
+      "customer_id": "CU-002",
+      "service_id": "SV-002",
+      "details": "Design a clean landing page for the academy.",
+      "quote": "8000.00",
+      "status": "In Progress",
+      "requested_on": "2026-11-02",
+      "due_date": "2026-11-12",
+      "updated": "2026-11-04",
+      "completed_on": ""
+    },
+    {
+      "id": "RQ-003",
+      "customer_id": "CU-003",
+      "service_id": "SV-003",
+      "details": "Configure cloud hosting for a small project.",
+      "quote": "6000.00",
+      "status": "Completed",
+      "requested_on": "2026-11-02",
+      "due_date": "2026-11-07",
+      "updated": "2026-11-04",
+      "completed_on": "2026-11-04"
+    }
+  ]
+}
