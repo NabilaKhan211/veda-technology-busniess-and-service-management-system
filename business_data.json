@@ -34,6 +34,87 @@
       "phone": "+91 98765 10003",
       "city": "Indore",
       "created": "2026-11-02"
+    },
+     {
+      "id": "CU-004",
+      "name": "TechNova Solutions",
+      "kind": "Business",
+      "email": "hello@technova.example",
+      "phone": "+91 98765 10004",
+      "city": "Pune",
+      "created": "2026-10-10"
+    },
+    {
+      "id": "CU-005",
+      "name": "Rohan Verma",
+      "kind": "Individual",
+      "email": "rohan.verma@example.com",
+      "phone": "+91 98765 10005",
+      "city": "Raipur",
+      "created": "2026-09-15"
+    },
+    {
+      "id": "CU-006",
+      "name": "Green Leaf Traders",
+      "kind": "Business",
+      "email": "info@greenleaf.example",
+      "phone": "+91 98765 10006",
+      "city": "Durg",
+      "created": "2026-10-12"
+    },
+    {
+      "id": "CU-007",
+      "name": "Priya Nair",
+      "kind": "Individual",
+      "email": "priya.nair@example.com",
+      "phone": "+91 98765 10007",
+      "city": "Bhilai",
+      "created": "2026-10-18"
+    },
+    {
+      "id": "CU-008",
+      "name": "Sunrise Coaching Institute",
+      "kind": "Business",
+      "email": "admin@sunrisecoaching.example",
+      "phone": "+91 98765 10008",
+      "city": "Nagpur",
+      "created": "2026-10-25"
+    },
+    {
+      "id": "CU-009",
+      "name": "Kabir Singh",
+      "kind": "Individual",
+      "email": "kabir.singh@example.com",
+      "phone": "+91 98765 10009",
+      "city": "Jaipur",
+      "created": "2026-10-05"
+    },
+    {
+      "id": "CU-010",
+      "name": "Meera Patel",
+      "kind": "Individual",
+      "email": "meera.patel@example.com",
+      "phone": "+91 98765 10010",
+      "city": "Ahmedabad",
+      "created": "2026-10-14"
+    },
+    {
+      "id": "CU-011",
+      "name": "Kumar & Sons Hardware",
+      "kind": "Business",
+      "email": "sales@kumarsons.example",
+      "phone": "+91 98765 10011",
+      "city": "Raipur",
+      "created": "2026-10-28"
+    },
+    {
+      "id": "CU-012",
+      "name": "Ananya Gupta",
+      "kind": "Individual",
+      "email": "ananya.gupta@example.com",
+      "phone": "+91 98765 10012",
+      "city": "Delhi",
+      "created": "2026-10-01"
     }
   ],
   "services": [
@@ -66,6 +147,77 @@
       "delivery_days": 5,
       "status": "Paused",
       "created": "2026-11-02"
+    },
+    
+    {
+      "id": "SV-004",
+      "name": "Mobile App Development",
+      "category": "Development",
+      "description": "Android and iOS app development (MVP)",
+      "price": "45000.00",
+      "delivery_days": 40,
+      "status": "Active",
+      "created": "2026-09-10"
+    },
+    {
+      "id": "SV-005",
+      "name": "Data Analytics Dashboard",
+      "category": "Data",
+      "description": "Interactive dashboard built from CSV or Excel data",
+      "price": "20000.00",
+      "delivery_days": 12,
+      "status": "Active",
+      "created": "2026-09-10"
+    },
+    {
+      "id": "SV-006",
+      "name": "Cyber Security Audit",
+      "category": "Security",
+      "description": "Basic vulnerability assessment and report",
+      "price": "18000.00",
+      "delivery_days": 10,
+      "status": "Active",
+      "created": "2026-09-15"
+    },
+    {
+      "id": "SV-007",
+      "name": "IT Consulting Session",
+      "category": "Consulting",
+      "description": "Two-hour technology and digital strategy session",
+      "price": "3000.00",
+      "delivery_days": 2,
+      "status": "Active",
+      "created": "2026-09-15"
+    },
+    {
+      "id": "SV-008",
+      "name": "Social Media Marketing",
+      "category": "Marketing",
+      "description": "Monthly social media content and campaign management",
+      "price": "9000.00",
+      "delivery_days": 30,
+      "status": "Active",
+      "created": "2026-09-20"
+    },
+    {
+      "id": "SV-009",
+      "name": "SEO Optimization",
+      "category": "Marketing",
+      "description": "Search engine optimization for business websites",
+      "price": "7000.00",
+      "delivery_days": 20,
+      "status": "Paused",
+      "created": "2026-09-20"
+    },
+    {
+      "id": "SV-010",
+      "name": "Legacy Intranet Portal",
+      "category": "Development",
+      "description": "Old intranet portal maintenance (no longer offered)",
+      "price": "12000.00",
+      "delivery_days": 25,
+      "status": "Retired",
+      "created": "2026-06-01"
     }
   ],
   "programs": [
@@ -96,6 +248,73 @@
       "status": "Open",
       "enrolled": [
         "CU-002"
+      ]
+    },
+    {
+      "id": "PR-003",
+      "name": "Data Analytics Bootcamp",
+      "type": "Training",
+      "description": "Hands-on data analysis with Python and spreadsheets",
+      "duration_days": 21,
+      "fee": "3000.00",
+      "seats": 5,
+      "start_date": "2026-11-20",
+      "status": "Open",
+      "enrolled": [
+        "CU-006",
+        "CU-008",
+        "CU-009",
+        "CU-010",
+        "CU-011"
+      ]
+    },
+    {
+      "id": "PR-004",
+      "name": "Cyber Security Workshop",
+      "type": "Training",
+      "description": "One-week introduction to cyber security basics",
+      "duration_days": 7,
+      "fee": "1500.00",
+      "seats": 15,
+      "start_date": "2026-12-10",
+      "status": "Closed",
+      "enrolled": [
+        "CU-001",
+        "CU-012"
+      ]
+    },
+    {
+      "id": "PR-005",
+      "name": "UI UX Design Internship",
+      "type": "Internship",
+      "description": "Guided design internship with real mini projects",
+      "duration_days": 30,
+      "fee": "0.00",
+      "seats": 8,
+      "start_date": "2026-09-15",
+      "status": "Completed",
+      "enrolled": [
+        "CU-003",
+        "CU-004",
+        "CU-010"
+      ]
+    },
+    {
+      "id": "PR-006",
+      "name": "Cloud Fundamentals Training",
+      "type": "Training",
+      "description": "Cloud basics, deployment and cost management",
+      "duration_days": 14,
+      "fee": "2000.00",
+      "seats": 25,
+      "start_date": "2026-10-05",
+      "status": "Completed",
+      "enrolled": [
+        "CU-002",
+        "CU-005",
+        "CU-007",
+        "CU-009",
+        "CU-012"
       ]
     }
   ],
@@ -148,6 +367,189 @@
       "updated": "2026-11-03",
       "resolved_on": "",
       "notes": []
+    },
+    {
+      "id": "IQ-004",
+      "customer_id": "CU-004",
+      "topic": "Service",
+      "reference": "SV-002",
+      "message": "Do you offer a revision round after the UI UX design delivery?",
+      "priority": "Medium",
+      "status": "Resolved",
+      "created": "2026-10-28",
+      "updated": "2026-10-30",
+      "resolved_on": "2026-10-30",
+      "notes": [
+        {
+          "date": "2026-10-30",
+          "text": "Confirmed two free revision rounds are included."
+        }
+      ]
+    },
+    {
+      "id": "IQ-005",
+      "customer_id": "CU-005",
+      "topic": "Program",
+      "reference": "PR-001",
+      "message": "Is a certificate given after the Python Backend Training?",
+      "priority": "Medium",
+      "status": "Closed",
+      "created": "2026-10-25",
+      "updated": "2026-10-27",
+      "resolved_on": "2026-10-27",
+      "notes": [
+        {
+          "date": "2026-10-27",
+          "text": "Explained certificate rules. Customer confirmed, inquiry closed."
+        }
+      ]
+    },
+    {
+      "id": "IQ-006",
+      "customer_id": "CU-006",
+      "topic": "Service",
+      "reference": "SV-005",
+      "message": "Can the analytics dashboard connect to Excel files?",
+      "priority": "High",
+      "status": "In Progress",
+      "created": "2026-11-01",
+      "updated": "2026-11-04",
+      "resolved_on": "",
+      "notes": [
+        {
+          "date": "2026-11-04",
+          "text": "Technical team is checking the sample Excel file."
+        }
+      ]
+    },
+    {
+      "id": "IQ-007",
+      "customer_id": "CU-007",
+      "topic": "Service",
+      "reference": "SV-004",
+      "message": "What is the cost and timeline for a mobile app MVP?",
+      "priority": "High",
+      "status": "New",
+      "created": "2026-11-04",
+      "updated": "2026-11-04",
+      "resolved_on": "",
+      "notes": []
+    },
+    {
+      "id": "IQ-008",
+      "customer_id": "CU-008",
+      "topic": "Program",
+      "reference": "PR-003",
+      "message": "Is any seat left in the Data Analytics Bootcamp?",
+      "priority": "Low",
+      "status": "Resolved",
+      "created": "2026-11-03",
+      "updated": "2026-11-03",
+      "resolved_on": "2026-11-03",
+      "notes": [
+        {
+          "date": "2026-11-03",
+          "text": "Informed the customer that the bootcamp is full; waiting list offered."
+        }
+      ]
+    },
+    {
+      "id": "IQ-009",
+      "customer_id": "CU-009",
+      "topic": "General",
+      "reference": "",
+      "message": "Please share invoice details and payment options.",
+      "priority": "Medium",
+      "status": "In Progress",
+      "created": "2026-11-02",
+      "updated": "2026-11-05",
+      "resolved_on": "",
+      "notes": [
+        {
+          "date": "2026-11-05",
+          "text": "Accounts team has been asked to send the invoice format."
+        }
+      ]
+    },
+    {
+      "id": "IQ-010",
+      "customer_id": "CU-010",
+      "topic": "Service",
+      "reference": "SV-006",
+      "message": "We need a basic security audit for our small office network.",
+      "priority": "High",
+      "status": "New",
+      "created": "2026-11-05",
+      "updated": "2026-11-05",
+      "resolved_on": "",
+      "notes": []
+    },
+    {
+      "id": "IQ-011",
+      "customer_id": "CU-011",
+      "topic": "Service",
+      "reference": "SV-009",
+      "message": "Is SEO optimization available again?",
+      "priority": "Low",
+      "status": "New",
+      "created": "2026-10-30",
+      "updated": "2026-10-30",
+      "resolved_on": "",
+      "notes": []
+    },
+    {
+      "id": "IQ-012",
+      "customer_id": "CU-012",
+      "topic": "Program",
+      "reference": "PR-004",
+      "message": "When will the next Cyber Security Workshop batch start?",
+      "priority": "Low",
+      "status": "Closed",
+      "created": "2026-10-20",
+      "updated": "2026-10-24",
+      "resolved_on": "2026-10-24",
+      "notes": [
+        {
+          "date": "2026-10-24",
+          "text": "Shared tentative dates for the next batch."
+        }
+      ]
+    },
+    {
+      "id": "IQ-013",
+      "customer_id": "CU-001",
+      "topic": "Service",
+      "reference": "SV-008",
+      "message": "Do you manage social media accounts for startups?",
+      "priority": "Medium",
+      "status": "Resolved",
+      "created": "2026-10-29",
+      "updated": "2026-11-01",
+      "resolved_on": "2026-11-01",
+      "notes": [
+        {
+          "date": "2026-11-01",
+          "text": "Sent the startup package details and sample plan."
+        }
+      ]
+    },
+    {
+      "id": "IQ-014",
+      "customer_id": "CU-003",
+      "topic": "Program",
+      "reference": "PR-006",
+      "message": "Can I get the notes of the Cloud Fundamentals training?",
+      "priority": "Low",
+      "status": "Resolved",
+      "created": "2026-10-22",
+      "updated": "2026-10-23",
+      "resolved_on": "2026-10-23",
+      "notes": [
+        {
+          "date": "2026-10-23",
+          "text": "Shared the course notes by email."
+        }
+      ]
     }
   ],
   "requests": [
@@ -186,6 +588,150 @@
       "due_date": "2026-11-07",
       "updated": "2026-11-04",
       "completed_on": "2026-11-04"
+    },
+    {
+      "id": "RQ-004",
+      "customer_id": "CU-004",
+      "service_id": "SV-004",
+      "details": "Build an MVP mobile app for appointment booking.",
+      "quote": "45000.00",
+      "status": "Submitted",
+      "requested_on": "2026-11-04",
+      "due_date": "2026-12-14",
+      "updated": "2026-11-04",
+      "completed_on": ""
+    },
+    {
+      "id": "RQ-005",
+      "customer_id": "CU-005",
+      "service_id": "SV-005",
+      "details": "Dashboard for monthly sales data from CSV files.",
+      "quote": "20000.00",
+      "status": "In Progress",
+      "requested_on": "2026-10-25",
+      "due_date": "2026-11-06",
+      "updated": "2026-11-03",
+      "completed_on": ""
+    },
+    {
+      "id": "RQ-006",
+      "customer_id": "CU-006",
+      "service_id": "SV-006",
+      "details": "Basic security audit of the office network.",
+      "quote": "18000.00",
+      "status": "In Progress",
+      "requested_on": "2026-10-18",
+      "due_date": "2026-11-02",
+      "updated": "2026-11-01",
+      "completed_on": ""
+    },
+    {
+      "id": "RQ-007",
+      "customer_id": "CU-007",
+      "service_id": "SV-007",
+      "details": "One consulting session on digital transformation.",
+      "quote": "3000.00",
+      "status": "Completed",
+      "requested_on": "2026-10-20",
+      "due_date": "2026-10-22",
+      "updated": "2026-10-22",
+      "completed_on": "2026-10-22"
+    },
+    {
+      "id": "RQ-008",
+      "customer_id": "CU-008",
+      "service_id": "SV-008",
+      "details": "Three-month social media campaign for new batch admissions.",
+      "quote": "9000.00",
+      "status": "Approved",
+      "requested_on": "2026-10-28",
+      "due_date": "2026-11-03",
+      "updated": "2026-10-30",
+      "completed_on": ""
+    },
+    {
+      "id": "RQ-009",
+      "customer_id": "CU-009",
+      "service_id": "SV-002",
+      "details": "Redesign the mobile app screens (negotiated price).",
+      "quote": "7500.00",
+      "status": "Completed",
+      "requested_on": "2026-10-10",
+      "due_date": "2026-10-17",
+      "updated": "2026-10-16",
+      "completed_on": "2026-10-16"
+    },
+    {
+      "id": "RQ-010",
+      "customer_id": "CU-010",
+      "service_id": "SV-001",
+      "details": "Company website with product catalogue.",
+      "quote": "14000.00",
+      "status": "Cancelled",
+      "requested_on": "2026-10-15",
+      "due_date": "2026-10-30",
+      "updated": "2026-10-20",
+      "completed_on": ""
+    },
+    {
+      "id": "RQ-011",
+      "customer_id": "CU-011",
+      "service_id": "SV-005",
+      "details": "Sales dashboard for the trading team.",
+      "quote": "20000.00",
+      "status": "Submitted",
+      "requested_on": "2026-11-05",
+      "due_date": "2026-11-17",
+      "updated": "2026-11-05",
+      "completed_on": ""
+    },
+    {
+      "id": "RQ-012",
+      "customer_id": "CU-012",
+      "service_id": "SV-006",
+      "details": "Security audit before the annual compliance check.",
+      "quote": "18000.00",
+      "status": "Completed",
+      "requested_on": "2026-10-05",
+      "due_date": "2026-10-15",
+      "updated": "2026-10-14",
+      "completed_on": "2026-10-14"
+    },
+    {
+      "id": "RQ-013",
+      "customer_id": "CU-002",
+      "service_id": "SV-004",
+      "details": "Mobile app for delivery tracking (discounted quote).",
+      "quote": "42000.00",
+      "status": "Approved",
+      "requested_on": "2026-11-03",
+      "due_date": "2026-12-20",
+      "updated": "2026-11-04",
+      "completed_on": ""
+    },
+    {
+      "id": "RQ-014",
+      "customer_id": "CU-004",
+      "service_id": "SV-007",
+      "details": "Consulting session on choosing the right cloud plan.",
+      "quote": "3000.00",
+      "status": "Completed",
+      "requested_on": "2026-10-30",
+      "due_date": "2026-11-01",
+      "updated": "2026-11-01",
+      "completed_on": "2026-11-01"
+    },
+    {
+      "id": "RQ-015",
+      "customer_id": "CU-005",
+      "service_id": "SV-010",
+      "details": "Maintenance fixes for the old intranet portal.",
+      "quote": "12000.00",
+      "status": "Completed",
+      "requested_on": "2026-09-20",
+      "due_date": "2026-10-10",
+      "updated": "2026-10-05",
+      "completed_on": "2026-10-05"
     }
   ]
 }

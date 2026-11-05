@@ -1,0 +1,98 @@
+==============================================================
+ PROJECT REPORT
+ Business & Service Management System
+ Veda Technology Python Internship - Project (Day 2 of 4)
+==============================================================
+
+1. INTRODUCTION
+A console application in Python that manages the operations of a
+technology and digital-services company: customers, services,
+training/internship programs, customer inquiries and service
+requests. Only public / synthetic data is used; no private Veda
+Technology production data is connected.
+
+2. OBJECTIVE
+Apply functions, modules, classes, dictionaries, lists, file
+handling, validation and basic reporting in a realistic
+technology-business scenario.
+
+3. TOOLS USED
+Python 3 (standard library only), VS Code, JSON, Git, GitHub.
+
+4. MODULES
+main.py              Menu-driven console interface (16 options)
+models.py            Customer, Service, Program, Inquiry,
+                     ServiceRequest classes + all validators
+storage.py           JSON storage: atomic save, backup of bad
+                     files, ID counters that are never reused
+customer_manager.py  Customer operations and history
+service_manager.py   Service operations and status flow
+program_manager.py   Programs, seats, enrolment / withdrawal
+inquiry_manager.py   Inquiries and service requests
+search_manager.py    Search and filtering (all record types)
+report_manager.py    Business reports and text-file export
+test_search_reports.py  Automatic tests (10 tests)
+
+5. DELIVERABLES CHECKLIST
+[x] Python application
+[x] Service management module
+[x] Program management module
+[x] Customer / service inquiry management
+[x] Search and filtering functionality
+[x] Basic business reports
+[x] JSON data storage
+[x] README documentation
+
+6. SEARCH & FILTERING
+- Keyword search (case-insensitive, every word must match); it also
+  matches related names, e.g. "aarav" finds his inquiries.
+- Customers : type, city
+- Services  : category, status, minimum / maximum price
+- Programs  : type, status (including Full), free seats only
+- Inquiries : status, priority, topic, customer
+- Requests  : status, customer, service, overdue only
+- Every filter value is validated; mistakes give a clear message.
+
+7. BUSINESS REPORTS
+Overview, services (demand and value), programs (seat utilisation
+and fee income), inquiries (by status/priority, open list, average
+days to resolve), service requests (earned vs pipeline value,
+overdue) and top customers. Can be saved as business_report_<date>.txt.
+Money uses Decimal, so totals are exact.
+
+8. BUSINESS RULES AND VALIDATION
+- Unique customer e-mails, service names and program names
+- No double enrolment; no enrolment in a full or closed program
+- Status changes follow fixed flows (e.g. a Completed request
+  cannot be reopened); completed programs are frozen
+- Records that are in use cannot be deleted
+- Only Active services can be requested
+- Strict validators for names, e-mail, phone, dates, amounts
+
+9. TESTING
+10 automatic unit tests (python -m unittest) cover keyword search,
+every filter type, bad filter values, overdue requests, money
+totals, customer value, an empty database and report export.
+Menu flows were also tested by hand.
+
+Bug found and fixed during testing: creating a service request
+and pressing Enter for the quote (use service price) failed
+because the Decimal price was rejected by the money validator.
+Fixed in inquiry_manager.py by passing the price as text.
+
+10. CHALLENGES AND LEARNINGS
+- Keeping UI, business rules and storage in separate modules made
+  new features (search, reports) easy to add without touching
+  existing logic.
+- Validating data both on input and on file load keeps the data safe.
+- Using Decimal for money avoids rounding errors.
+- Writing tests quickly exposed a real bug.
+
+11. FUTURE SCOPE
+CSV export, user login roles, charts, and a web interface
+(Flask or Streamlit).
+
+12. CONCLUSION
+The project meets all deliverables and shows practical use of
+core Python concepts in a business scenario.
+==============================================================

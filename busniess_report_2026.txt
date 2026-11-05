@@ -1,0 +1,62 @@
+==================================================================
+ BUSINESS & SERVICE MANAGEMENT REPORT
+ Generated on 2026-11-05
+==================================================================
+
+BUSINESS OVERVIEW
+  Customers        : 3  (Individual: 2, Business: 1)
+  Services         : 3
+  Programs         : 2
+  Inquiries        : 3
+  Service requests : 3
+
+SERVICES
+  By status  : Active: 2, Paused: 1, Retired: 0
+  By category: Cloud: 1, Design: 1, Development: 1
+  Average price: INR 9,666.67
+
+  Demand per service (most requested first):
+  ID      Service              Status  Requests  Completed value
+  ------  -------------------  ------  --------  ---------------
+  SV-001  Website Development  Active  1         INR 0.00
+  SV-002  UI UX Design         Active  1         INR 0.00
+  SV-003  Cloud Setup          Paused  1         INR 6,000.00
+
+PROGRAMS
+  By status: Open: 2, Closed: 0, Completed: 0
+  Seat utilisation: 3/30 seats taken (10.0%)
+  Expected fee income: INR 5,000.00
+
+  ID      Program                     Type        Enrolled  Filled  Status  Fee income
+  ------  --------------------------  ----------  --------  ------  ------  ------------
+  PR-001  Python Backend Training     Training    2/20      10%     Open    INR 5,000.00
+  PR-002  Web Development Internship  Internship  1/10      10%     Open    INR 0.00
+
+CUSTOMER INQUIRIES
+  By status  : New: 1, In Progress: 1, Resolved: 1, Closed: 0
+  By priority: Low: 1, Medium: 1, High: 1
+  Still open : 2
+  Average days to resolve: 2.0
+
+  Open inquiries (highest priority first):
+  ID      Customer  Priority  Status       Since
+  ------  --------  --------  -----------  ----------
+  IQ-001  CU-001    High      In Progress  2026-11-02
+  IQ-003  CU-003    Low       New          2026-11-03
+
+SERVICE REQUESTS
+  By status: Submitted: 0, Approved: 1, In Progress: 1, Completed: 1, Cancelled: 0
+  Completed value (earned)  : INR 6,000.00
+  Pipeline value (not done) : INR 23,000.00
+  Overdue requests          : 0
+
+TOP CUSTOMERS BY VALUE (completed services + program fees)
+  ID      Customer               Requests  Programs  Total value
+  ------  ---------------------  --------  --------  ------------
+  CU-003  Sara Khan              1         1         INR 8,500.00
+  CU-001  Aarav Sharma           1         1         INR 2,500.00
+  CU-002  Bright Future Academy  1         1         INR 0.00
+
+==================================================================
+ End of report
+==================================================================
