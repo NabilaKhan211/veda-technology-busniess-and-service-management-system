@@ -1,0 +1,13 @@
+﻿id,name,kind,email,phone,city,created
+CU-001,Aarav Sharma,Individual,aarav.sharma@example.com,+91 98765 10001,Indore,2026-11-01
+CU-002,Bright Future Academy,Business,contact@brightfuture.example,+91 98765 10002,Bhopal,2026-11-01
+CU-003,Sara Khan,Individual,sara.khan@example.com,+91 98765 10003,Indore,2026-11-02
+CU-004,TechNova Solutions,Business,hello@technova.example,+91 98765 10004,Pune,2026-10-10
+CU-005,Rohan Verma,Individual,rohan.verma@example.com,+91 98765 10005,Raipur,2026-09-15
+CU-006,Green Leaf Traders,Business,info@greenleaf.example,+91 98765 10006,Durg,2026-10-12
+CU-007,Priya Nair,Individual,priya.nair@example.com,+91 98765 10007,Bhilai,2026-10-18
+CU-008,Sunrise Coaching Institute,Business,admin@sunrisecoaching.example,+91 98765 10008,Nagpur,2026-10-25
+CU-009,Kabir Singh,Individual,kabir.singh@example.com,+91 98765 10009,Jaipur,2026-10-05
+CU-010,Meera Patel,Individual,meera.patel@example.com,+91 98765 10010,Ahmedabad,2026-10-14
+CU-011,Kumar & Sons Hardware,Business,sales@kumarsons.example,+91 98765 10011,Raipur,2026-10-28
+CU-012,Ananya Gupta,Individual,ananya.gupta@example.com,+91 98765 10012,Delhi,2026-10-01

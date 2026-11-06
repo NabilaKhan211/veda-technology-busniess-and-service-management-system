@@ -17,6 +17,7 @@ The application uses JSON file storage to save records permanently, so the data 
 - **Service Requests:** Create and manage customer service requests.
 - **Search & Filtering:** Keyword search plus filters by type, category, status, priority, price range, free seats and overdue requests.
 - **Business Reports:** Summary of customers, services, programs, inquiries, requests and money (earned vs. pipeline), printable and exportable to a text file.
+- **Export & Backup:** Export all data to CSV files (opens in Excel / Google Sheets) and create dated backups of the JSON data file.
 - **Record Management:** Edit, change status of and delete records from the menu (with the same business rules).
 - **Data Storage:** Save all records in a JSON file.
 - **Data Validation:** Validate user inputs and prevent invalid operations.
@@ -44,9 +45,13 @@ Business-Service-Management-System/
 ├── inquiry_manager.py
 ├── search_manager.py
 ├── report_manager.py
+├── export_manager.py
 ├── test_search_reports.py
+├── test_core_rules.py
 ├── business_data.json
-├── business_report_2026-11-05.txt   (sample generated report)
+├── business_report_2026-11-06.txt   (sample generated report)
+├── exports/2026-11-06/              (sample CSV export)
+├── .gitignore
 └── README.md
 ```
 
@@ -83,7 +88,9 @@ python main.py
 | inquiry_manager.py | Inquiry and request operations |
 | search_manager.py | Search and filtering for every record type |
 | report_manager.py | Business reports and text-file export |
-| test_search_reports.py | Automatic tests (`python -m unittest`) |
+| export_manager.py | CSV export and JSON backup |
+| test_search_reports.py | Tests for search, filtering and reports |
+| test_core_rules.py | Tests for business rules, storage safety, export and backup |
 
 ## Main Menu
 
@@ -96,7 +103,8 @@ python main.py
 6. View Programs                14. Search & Filter
 7. Add Inquiry                  15. Business Reports
 8. View Inquiries               16. Manage Records (edit / delete)
-                                 0. Exit
+17. Export & Backup (CSV / JSON)
+ 0. Exit
 ```
 
 ## Search & Filtering (menu option 14)
@@ -126,7 +134,16 @@ The report can be viewed as a whole or section by section, and saved as `busines
 | Service requests | Count by status, completed value (earned), pipeline value, overdue requests |
 | Top customers | Customers ranked by completed services plus program fees |
 
-Money is calculated with `Decimal`, so totals are exact. See `business_report_2026-11-05.txt` for a sample.
+Money is calculated with `Decimal`, so totals are exact. See `business_report_2026-11-06.txt` for a sample.
+
+## Export & Backup (menu option 17)
+
+| Action | Result |
+|---|---|
+| Export all data to CSV files | Creates `exports/<date>/` with `customers.csv`, `services.csv`, `programs.csv`, `inquiries.csv`, `requests.csv` |
+| Backup data file (JSON) | Copies `business_data.json` to `backups/business_data_<date>_<time>.json` |
+
+CSV files open directly in Excel or Google Sheets. Lists are flattened (for example enrolled customers become `CU-001;CU-002`), and text that starts with `=` or `@` is protected so a spreadsheet cannot run it as a formula. The `backups/` folder is ignored by Git; a sample `exports/` folder is included.
 
 ## Running Tests
 
@@ -134,7 +151,14 @@ Money is calculated with `Decimal`, so totals are exact. See `business_report_20
 python -m unittest -v
 ```
 
-The tests use an in-memory store, so they never change `business_data.json`.
+32 tests cover customers, services, programs, inquiries, requests, search, reports, storage safety (damaged file, broken references), CSV export and backup. Tests use an in-memory store or temporary folders, so they never change `business_data.json`.
+
+## Project Progress
+
+| Day | Work done |
+|---|---|
+| Day 2 | Core system: customers, services, programs, inquiries, service requests, validation, business rules, JSON storage |
+| Day 3 | Search & filtering, business reports, record management menu, CSV export and JSON backup, complete sample data, 32 automatic tests, bug fix for the default service-request quote |
 
 ## Data Storage
 
@@ -190,4 +214,5 @@ This project demonstrates practical implementation of:
 
 The Business & Service Management System provides a simple way to organize and manage business-related information using Python. Its modular structure makes the application easier to understand, maintain, and extend.
 
+Nabila khan
 **Developed as part of the Veda Technology Python Programming Internship.**

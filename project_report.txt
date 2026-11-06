@@ -1,7 +1,7 @@
 ==============================================================
  PROJECT REPORT
  Business & Service Management System
- Veda Technology Python Internship - Project (Day 2 of 4)
+ Veda Technology Python Internship - Project (Day 3 of 4)
 ==============================================================
 
 1. INTRODUCTION
@@ -20,7 +20,7 @@ technology-business scenario.
 Python 3 (standard library only), VS Code, JSON, Git, GitHub.
 
 4. MODULES
-main.py              Menu-driven console interface (16 options)
+main.py              Menu-driven console interface (17 options)
 models.py            Customer, Service, Program, Inquiry,
                      ServiceRequest classes + all validators
 storage.py           JSON storage: atomic save, backup of bad
@@ -31,7 +31,9 @@ program_manager.py   Programs, seats, enrolment / withdrawal
 inquiry_manager.py   Inquiries and service requests
 search_manager.py    Search and filtering (all record types)
 report_manager.py    Business reports and text-file export
-test_search_reports.py  Automatic tests (10 tests)
+export_manager.py    CSV export and dated JSON backups
+test_search_reports.py  Tests for search, filtering, reports
+test_core_rules.py   Tests for business rules, storage, export
 
 5. DELIVERABLES CHECKLIST
 [x] Python application
@@ -69,10 +71,22 @@ Money uses Decimal, so totals are exact.
 - Only Active services can be requested
 - Strict validators for names, e-mail, phone, dates, amounts
 
-9. TESTING
-10 automatic unit tests (python -m unittest) cover keyword search,
-every filter type, bad filter values, overdue requests, money
-totals, customer value, an empty database and report export.
+9. EXPORT AND BACKUP (DAY 3)
+- CSV export: one file per record type in exports/<date>/,
+  readable in Excel / Google Sheets (UTF-8 with BOM, lists flattened,
+  formula-injection protection for text starting with = or @).
+- Backup: dated copy of business_data.json in backups/.
+
+10. TESTING
+32 automatic unit tests (python -m unittest) cover:
+- customers: e-mail validation and uniqueness, ID reuse, delete rules
+- services: unique names, status flow, retired services frozen
+- programs: double / full / closed enrolment, seat limits, delete rules
+- inquiries and requests: status flows, resolved/completed dates,
+  default quote and due date, active-service rule
+- storage: save/load round trip, damaged file kept as .corrupt,
+  broken references skipped with a message
+- search, filters, reports (money totals), CSV export and backup
 Menu flows were also tested by hand.
 
 Bug found and fixed during testing: creating a service request
@@ -80,7 +94,7 @@ and pressing Enter for the quote (use service price) failed
 because the Decimal price was rejected by the money validator.
 Fixed in inquiry_manager.py by passing the price as text.
 
-10. CHALLENGES AND LEARNINGS
+11. CHALLENGES AND LEARNINGS
 - Keeping UI, business rules and storage in separate modules made
   new features (search, reports) easy to add without touching
   existing logic.
@@ -88,11 +102,11 @@ Fixed in inquiry_manager.py by passing the price as text.
 - Using Decimal for money avoids rounding errors.
 - Writing tests quickly exposed a real bug.
 
-11. FUTURE SCOPE
-CSV export, user login roles, charts, and a web interface
+12. FUTURE SCOPE
+CSV import, user login roles, charts, and a web interface
 (Flask or Streamlit).
 
-12. CONCLUSION
+13. CONCLUSION
 The project meets all deliverables and shows practical use of
 core Python concepts in a business scenario.
 ==============================================================

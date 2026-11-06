@@ -1,11 +1,11 @@
 {
   "version": 1,
   "counters": {
-    "CU": 3,
-    "SV": 3,
-    "PR": 2,
-    "IQ": 3,
-    "RQ": 3
+    "CU": 12,
+    "SV": 10,
+    "PR": 6,
+    "IQ": 14,
+    "RQ": 15
   },
   "customers": [
     {
@@ -35,7 +35,7 @@
       "city": "Indore",
       "created": "2026-11-02"
     },
-     {
+    {
       "id": "CU-004",
       "name": "TechNova Solutions",
       "kind": "Business",
@@ -148,7 +148,6 @@
       "status": "Paused",
       "created": "2026-11-02"
     },
-    
     {
       "id": "SV-004",
       "name": "Mobile App Development",

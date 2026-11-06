@@ -12,6 +12,7 @@ from program_manager import ProgramManager
 from inquiry_manager import InquiryManager, RequestManager
 from search_manager import SearchManager
 from report_manager import ReportManager
+from export_manager import ExportManager
 
 # Which columns to show for each kind of record
 COLUMNS = {
@@ -179,6 +180,20 @@ def report_menu(reports):
         print(reports.build([pick.lower()]))
  
  
+ 
+# ---------- export & backup ----------
+def export_menu(exports):
+    print("\nEXPORT & BACKUP")
+    pick = choose("Action", ["Export all data to CSV files", "Backup data file (JSON)"])
+    if pick.startswith("Export"):
+        folder, counts = exports.export_csv()
+        print("CSV files saved in:", folder)
+        for name, number in counts.items():
+            print(f"  {name}.csv  ({number} rows)")
+    else:
+        print("Backup saved to:", exports.backup())
+ 
+ 
 # ---------- update / delete ----------
 CHOICE_FIELDS = {"kind": CUSTOMER_KINDS, "category": SERVICE_CATEGORIES, "type": PROGRAM_TYPES}
  
@@ -241,6 +256,8 @@ def main():
     requests = RequestManager(store)
     search = SearchManager(store)
     reports = ReportManager(store)
+    exports = ExportManager(store)
+
 
     actions = {
         "1": lambda: add_customer(customers),
@@ -256,6 +273,7 @@ def main():
         "14": lambda: search_menu(search),
         "15": lambda: report_menu(reports),
         "16": lambda: manage_menu(customers, services, programs, inquiries, requests),
+        "17": lambda: export_menu(exports),
     }
 
     while True:
@@ -278,6 +296,8 @@ def main():
         print("14. Search & Filter")
         print("15. Business Reports")
         print("16. Manage Records (edit / delete)")
+        print("17. Export & Backup (CSV / JSON)")
+
         print("0. Exit")
 
         choice = ask("\nEnter your choice: ")

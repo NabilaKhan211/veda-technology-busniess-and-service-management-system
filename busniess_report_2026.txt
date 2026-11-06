@@ -1,61 +1,83 @@
 ==================================================================
  BUSINESS & SERVICE MANAGEMENT REPORT
- Generated on 2026-11-05
+ Generated on 2026-11-06
 ==================================================================
 
 BUSINESS OVERVIEW
-  Customers        : 3  (Individual: 2, Business: 1)
-  Services         : 3
-  Programs         : 2
-  Inquiries        : 3
-  Service requests : 3
+  Customers        : 12  (Individual: 7, Business: 5)
+  Services         : 10
+  Programs         : 6
+  Inquiries        : 14
+  Service requests : 15
 
 SERVICES
-  By status  : Active: 2, Paused: 1, Retired: 0
-  By category: Cloud: 1, Design: 1, Development: 1
-  Average price: INR 9,666.67
+  By status  : Active: 7, Paused: 2, Retired: 1
+  By category: Cloud: 1, Consulting: 1, Data: 1, Design: 1, Development: 3, Marketing: 2, Security: 1
+  Average price: INR 14,300.00
 
   Demand per service (most requested first):
-  ID      Service              Status  Requests  Completed value
-  ------  -------------------  ------  --------  ---------------
-  SV-001  Website Development  Active  1         INR 0.00
-  SV-002  UI UX Design         Active  1         INR 0.00
-  SV-003  Cloud Setup          Paused  1         INR 6,000.00
+  ID      Service                   Status   Requests  Completed value
+  ------  ------------------------  -------  --------  ---------------
+  SV-001  Website Development       Active   2         INR 0.00
+  SV-002  UI UX Design              Active   2         INR 7,500.00
+  SV-004  Mobile App Development    Active   2         INR 0.00
+  SV-005  Data Analytics Dashboard  Active   2         INR 0.00
+  SV-006  Cyber Security Audit      Active   2         INR 18,000.00
+  SV-007  IT Consulting Session     Active   2         INR 6,000.00
+  SV-003  Cloud Setup               Paused   1         INR 6,000.00
+  SV-008  Social Media Marketing    Active   1         INR 0.00
+  SV-010  Legacy Intranet Portal    Retired  1         INR 12,000.00
+  SV-009  SEO Optimization          Paused   0         INR 0.00
 
 PROGRAMS
-  By status: Open: 2, Closed: 0, Completed: 0
-  Seat utilisation: 3/30 seats taken (10.0%)
-  Expected fee income: INR 5,000.00
+  By status: Open: 3, Closed: 1, Completed: 2
+  Seat utilisation: 21/83 seats taken (25.3%)
+  Expected fee income: INR 38,000.00
 
-  ID      Program                     Type        Enrolled  Filled  Status  Fee income
-  ------  --------------------------  ----------  --------  ------  ------  ------------
-  PR-001  Python Backend Training     Training    2/20      10%     Open    INR 5,000.00
-  PR-002  Web Development Internship  Internship  1/10      10%     Open    INR 0.00
+  ID      Program                      Type        Enrolled  Filled  Status     Fee income
+  ------  ---------------------------  ----------  --------  ------  ---------  -------------
+  PR-001  Python Backend Training      Training    4/20      20%     Open       INR 10,000.00
+  PR-002  Web Development Internship   Internship  2/10      20%     Open       INR 0.00
+  PR-003  Data Analytics Bootcamp      Training    5/5       100%    Full       INR 15,000.00
+  PR-004  Cyber Security Workshop      Training    2/15      13%     Closed     INR 3,000.00
+  PR-005  UI UX Design Internship      Internship  3/8       38%     Completed  INR 0.00
+  PR-006  Cloud Fundamentals Training  Training    5/25      20%     Completed  INR 10,000.00
 
 CUSTOMER INQUIRIES
-  By status  : New: 1, In Progress: 1, Resolved: 1, Closed: 0
-  By priority: Low: 1, Medium: 1, High: 1
-  Still open : 2
+  By status  : New: 4, In Progress: 3, Resolved: 5, Closed: 2
+  By priority: Low: 5, Medium: 5, High: 4
+  Still open : 7
   Average days to resolve: 2.0
 
   Open inquiries (highest priority first):
   ID      Customer  Priority  Status       Since
   ------  --------  --------  -----------  ----------
+  IQ-006  CU-006    High      In Progress  2026-11-01
   IQ-001  CU-001    High      In Progress  2026-11-02
+  IQ-007  CU-007    High      New          2026-11-04
+  IQ-010  CU-010    High      New          2026-11-05
+  IQ-009  CU-009    Medium    In Progress  2026-11-02
+  IQ-011  CU-011    Low       New          2026-10-30
   IQ-003  CU-003    Low       New          2026-11-03
 
 SERVICE REQUESTS
-  By status: Submitted: 0, Approved: 1, In Progress: 1, Completed: 1, Cancelled: 0
-  Completed value (earned)  : INR 6,000.00
-  Pipeline value (not done) : INR 23,000.00
-  Overdue requests          : 0
+  By status: Submitted: 2, Approved: 3, In Progress: 3, Completed: 6, Cancelled: 1
+  Completed value (earned)  : INR 49,500.00
+  Pipeline value (not done) : INR 177,000.00
+  Overdue requests          : 2
+  ID      Customer  Service  Due date    Status
+  ------  --------  -------  ----------  -----------
+  RQ-006  CU-006    SV-006   2026-11-02  In Progress
+  RQ-008  CU-008    SV-008   2026-11-03  Approved
 
 TOP CUSTOMERS BY VALUE (completed services + program fees)
-  ID      Customer               Requests  Programs  Total value
-  ------  ---------------------  --------  --------  ------------
-  CU-003  Sara Khan              1         1         INR 8,500.00
-  CU-001  Aarav Sharma           1         1         INR 2,500.00
-  CU-002  Bright Future Academy  1         1         INR 0.00
+  ID      Customer      Requests  Programs  Total value
+  ------  ------------  --------  --------  -------------
+  CU-012  Ananya Gupta  1         2         INR 21,500.00
+  CU-005  Rohan Verma   2         2         INR 16,500.00
+  CU-009  Kabir Singh   1         2         INR 12,500.00
+  CU-003  Sara Khan     1         2         INR 8,500.00
+  CU-007  Priya Nair    1         2         INR 7,500.00
 
 ==================================================================
  End of report

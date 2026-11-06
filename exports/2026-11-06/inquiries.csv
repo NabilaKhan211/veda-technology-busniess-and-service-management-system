@@ -1,0 +1,15 @@
+﻿id,customer_id,topic,reference,message,priority,status,created,updated,resolved_on,notes
+IQ-001,CU-001,Service,SV-001,Please share the website development process and timeline.,High,In Progress,2026-11-02,2026-11-03,,2026-11-03: Shared the initial project timeline with the customer.
+IQ-002,CU-002,Program,PR-002,We want to know the internship schedule for our team.,Medium,Resolved,2026-11-02,2026-11-04,2026-11-04,2026-11-04: Sent the internship schedule and program details.
+IQ-003,CU-003,General,,Please share your office working hours.,Low,New,2026-11-03,2026-11-03,,
+IQ-004,CU-004,Service,SV-002,Do you offer a revision round after the UI UX design delivery?,Medium,Resolved,2026-10-28,2026-10-30,2026-10-30,2026-10-30: Confirmed two free revision rounds are included.
+IQ-005,CU-005,Program,PR-001,Is a certificate given after the Python Backend Training?,Medium,Closed,2026-10-25,2026-10-27,2026-10-27,"2026-10-27: Explained certificate rules. Customer confirmed, inquiry closed."
+IQ-006,CU-006,Service,SV-005,Can the analytics dashboard connect to Excel files?,High,In Progress,2026-11-01,2026-11-04,,2026-11-04: Technical team is checking the sample Excel file.
+IQ-007,CU-007,Service,SV-004,What is the cost and timeline for a mobile app MVP?,High,New,2026-11-04,2026-11-04,,
+IQ-008,CU-008,Program,PR-003,Is any seat left in the Data Analytics Bootcamp?,Low,Resolved,2026-11-03,2026-11-03,2026-11-03,2026-11-03: Informed the customer that the bootcamp is full; waiting list offered.
+IQ-009,CU-009,General,,Please share invoice details and payment options.,Medium,In Progress,2026-11-02,2026-11-05,,2026-11-05: Accounts team has been asked to send the invoice format.
+IQ-010,CU-010,Service,SV-006,We need a basic security audit for our small office network.,High,New,2026-11-05,2026-11-05,,
+IQ-011,CU-011,Service,SV-009,Is SEO optimization available again?,Low,New,2026-10-30,2026-10-30,,
+IQ-012,CU-012,Program,PR-004,When will the next Cyber Security Workshop batch start?,Low,Closed,2026-10-20,2026-10-24,2026-10-24,2026-10-24: Shared tentative dates for the next batch.
+IQ-013,CU-001,Service,SV-008,Do you manage social media accounts for startups?,Medium,Resolved,2026-10-29,2026-11-01,2026-11-01,2026-11-01: Sent the startup package details and sample plan.
+IQ-014,CU-003,Program,PR-006,Can I get the notes of the Cloud Fundamentals training?,Low,Resolved,2026-10-22,2026-10-23,2026-10-23,2026-10-23: Shared the course notes by email.
