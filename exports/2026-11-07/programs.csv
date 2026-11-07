@@ -1,0 +1,7 @@
+﻿id,name,type,description,duration_days,fee,seats,start_date,status,enrolled
+PR-001,Python Backend Training,Training,Practical Python and API development training,30,2500.00,20,2026-11-15,Open,CU-001;CU-003
+PR-002,Web Development Internship,Internship,Supervised web development internship program,45,0.00,10,2026-12-01,Open,CU-002
+PR-003,Data Analytics Bootcamp,Training,Hands-on data analysis with Python and spreadsheets,21,3000.00,5,2026-11-20,Open,CU-006;CU-008;CU-009;CU-010;CU-011
+PR-004,Cyber Security Workshop,Training,One-week introduction to cyber security basics,7,1500.00,15,2026-12-10,Closed,CU-001;CU-012
+PR-005,UI UX Design Internship,Internship,Guided design internship with real mini projects,30,0.00,8,2026-09-15,Completed,CU-003;CU-004;CU-010
+PR-006,Cloud Fundamentals Training,Training,"Cloud basics, deployment and cost management",14,2000.00,25,2026-10-05,Completed,CU-002;CU-005;CU-007;CU-009;CU-012

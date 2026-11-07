@@ -1,0 +1,7 @@
+name,kind,email,phone,city
+Ishaan Malik,Individual,ishaan.malik@example.com,+91 98765 10016,Delhi
+Aarav Copy,Individual,aarav.sharma@example.com,+91 98765 10017,Indore
+Bad Email Person,Individual,not-an-email,+91 98765 10018,Indore
+Wrong Type Co,Company,wrongtype@example.com,+91 98765 10019,Pune
+,,,,
+Short Phone,Individual,short.phone@example.com,123,Pune

@@ -1,0 +1,16 @@
+﻿id,customer_id,service_id,details,quote,status,requested_on,due_date,updated,completed_on
+RQ-001,CU-001,SV-001,Create a five-page responsive business website.,15000.00,Approved,2026-11-02,2026-11-20,2026-11-03,
+RQ-002,CU-002,SV-002,Design a clean landing page for the academy.,8000.00,In Progress,2026-11-02,2026-11-12,2026-11-04,
+RQ-003,CU-003,SV-003,Configure cloud hosting for a small project.,6000.00,Completed,2026-11-02,2026-11-07,2026-11-04,2026-11-04
+RQ-004,CU-004,SV-004,Build an MVP mobile app for appointment booking.,45000.00,Submitted,2026-11-04,2026-12-14,2026-11-04,
+RQ-005,CU-005,SV-005,Dashboard for monthly sales data from CSV files.,20000.00,In Progress,2026-10-25,2026-11-06,2026-11-03,
+RQ-006,CU-006,SV-006,Basic security audit of the office network.,18000.00,In Progress,2026-10-18,2026-11-02,2026-11-01,
+RQ-007,CU-007,SV-007,One consulting session on digital transformation.,3000.00,Completed,2026-10-20,2026-10-22,2026-10-22,2026-10-22
+RQ-008,CU-008,SV-008,Three-month social media campaign for new batch admissions.,9000.00,Approved,2026-10-28,2026-11-03,2026-10-30,
+RQ-009,CU-009,SV-002,Redesign the mobile app screens (negotiated price).,7500.00,Completed,2026-10-10,2026-10-17,2026-10-16,2026-10-16
+RQ-010,CU-010,SV-001,Company website with product catalogue.,14000.00,Cancelled,2026-10-15,2026-10-30,2026-10-20,
+RQ-011,CU-011,SV-005,Sales dashboard for the trading team.,20000.00,Submitted,2026-11-05,2026-11-17,2026-11-05,
+RQ-012,CU-012,SV-006,Security audit before the annual compliance check.,18000.00,Completed,2026-10-05,2026-10-15,2026-10-14,2026-10-14
+RQ-013,CU-002,SV-004,Mobile app for delivery tracking (discounted quote).,42000.00,Approved,2026-11-03,2026-12-20,2026-11-04,
+RQ-014,CU-004,SV-007,Consulting session on choosing the right cloud plan.,3000.00,Completed,2026-10-30,2026-11-01,2026-11-01,2026-11-01
+RQ-015,CU-005,SV-010,Maintenance fixes for the old intranet portal.,12000.00,Completed,2026-09-20,2026-10-10,2026-10-05,2026-10-05

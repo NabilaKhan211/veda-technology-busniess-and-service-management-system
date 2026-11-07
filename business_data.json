@@ -1,7 +1,7 @@
 {
   "version": 1,
   "counters": {
-    "CU": 12,
+    "CU": 16,
     "SV": 10,
     "PR": 6,
     "IQ": 14,
@@ -115,6 +115,42 @@
       "phone": "+91 98765 10012",
       "city": "Delhi",
       "created": "2026-10-01"
+    },
+    {
+      "id": "CU-013",
+      "name": "Ishaan Malik",
+      "kind": "Individual",
+      "email": "ishaan.malik@example.com",
+      "phone": "+91 98765 10016",
+      "city": "Delhi",
+      "created": "2026-11-07"
+    },
+    {
+      "id": "CU-014",
+      "name": "Neha Joshi",
+      "kind": "Individual",
+      "email": "neha.joshi@example.com",
+      "phone": "+91 98765 10013",
+      "city": "Indore",
+      "created": "2026-11-07"
+    },
+    {
+      "id": "CU-015",
+      "name": "Vikram Rao",
+      "kind": "Individual",
+      "email": "vikram.rao@example.com",
+      "phone": "+91 98765 10014",
+      "city": "Hyderabad",
+      "created": "2026-11-07"
+    },
+    {
+      "id": "CU-016",
+      "name": "Orbit Digital Labs",
+      "kind": "Business",
+      "email": "team@orbitdigital.example",
+      "phone": "+91 98765 10015",
+      "city": "Pune",
+      "created": "2026-11-07"
     }
   ],
   "services": [

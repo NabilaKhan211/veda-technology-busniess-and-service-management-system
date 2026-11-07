@@ -1,4 +1,15 @@
-"""Console entry point for the Business & Service Management System."""
+"""Console entry point for the Business & Service Management System.
+    python main.py                  menu
+    python main.py --report         print the business report and exit
+    python main.py --export         export all data to CSV files and exit
+    python main.py --backup         back up the JSON data file and exit
+    python main.py --data FILE ...  use another JSON data file
+"""
+
+import argparse
+import os
+import sys
+
 
 from storage import DataStore, DEFAULT_FILE
 from models import (
@@ -13,6 +24,8 @@ from inquiry_manager import InquiryManager, RequestManager
 from search_manager import SearchManager
 from report_manager import ReportManager
 from export_manager import ExportManager
+from import_manager import ImportManager, KINDS
+
 
 # Which columns to show for each kind of record
 COLUMNS = {
@@ -180,7 +193,6 @@ def report_menu(reports):
         print(reports.build([pick.lower()]))
  
  
- 
 # ---------- export & backup ----------
 def export_menu(exports):
     print("\nEXPORT & BACKUP")
@@ -192,6 +204,21 @@ def export_menu(exports):
             print(f"  {name}.csv  ({number} rows)")
     else:
         print("Backup saved to:", exports.backup())
+ 
+ 
+# ---------- import ----------
+def import_menu(imports):
+    print("\nIMPORT FROM CSV")
+    kind = choose("What do you want to import", ["Customers", "Services", "Programs"]).lower()
+    print("Required columns:", ", ".join(KINDS[kind]))
+    path = ask(f"CSV file path (for example sample_import/new_{kind}.csv): ").strip('"')
+    result = imports.import_csv(kind, path)
+    print(f"Imported {len(result.added)} {kind[:-1] if len(result.added) == 1 else kind}" +
+          (f": {', '.join(result.added)}" if result.added else "") + ".")
+    if result.skipped:
+        print(f"Skipped {len(result.skipped)} row(s):")
+        for number, reason in result.skipped:
+            print(f"  row {number}: {reason}")
  
  
 # ---------- update / delete ----------
@@ -243,8 +270,19 @@ def manage_menu(customers, services, programs, inquiries, requests):
         record = requests.update_quote(ask("Request ID: "), ask("New quote: "))
         print(f"Request {record.id} quote is now {record.quote}.")
  
-
-def main():
+ 
+def parse_args(argv):
+    parser = argparse.ArgumentParser(description="Business & Service Management System. Start without options for the menu.")
+    parser.add_argument("--data", metavar="FILE", help="use another JSON data file (default: business_data.json)")
+    parser.add_argument("--report", action="store_true", help="print the full business report and exit")
+    parser.add_argument("--export", action="store_true", help="export all data to CSV files and exit")
+    parser.add_argument("--backup", action="store_true", help="back up the JSON data file and exit")
+    return parser.parse_args(argv)
+ 
+def main(argv=None):
+    args = parse_args(argv)
+    if args.data and not os.path.isfile(args.data):
+        sys.exit(f"Data file not found: {args.data}")
     store = DataStore(DEFAULT_FILE)
     for warning in store.load():
         print("WARNING:", warning)
@@ -257,7 +295,17 @@ def main():
     search = SearchManager(store)
     reports = ReportManager(store)
     exports = ExportManager(store)
+    imports = ImportManager(customers, services, programs)
 
+    if args.report or args.export or args.backup:            # command-line mode: do the job and exit
+        if args.report:
+            print(reports.build())
+        if args.export:
+            folder, counts = exports.export_csv()
+            print("CSV files saved in:", folder, "|", ", ".join(f"{n}: {c}" for n, c in counts.items()))
+        if args.backup:
+            print("Backup saved to:", exports.backup())
+        return
 
     actions = {
         "1": lambda: add_customer(customers),
@@ -274,6 +322,7 @@ def main():
         "15": lambda: report_menu(reports),
         "16": lambda: manage_menu(customers, services, programs, inquiries, requests),
         "17": lambda: export_menu(exports),
+        "18": lambda: import_menu(imports),
     }
 
     while True:
@@ -297,7 +346,7 @@ def main():
         print("15. Business Reports")
         print("16. Manage Records (edit / delete)")
         print("17. Export & Backup (CSV / JSON)")
-
+        print("18. Import Data from CSV")
         print("0. Exit")
 
         choice = ask("\nEnter your choice: ")

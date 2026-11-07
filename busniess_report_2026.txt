@@ -1,6 +1,6 @@
 ==================================================================
  BUSINESS & SERVICE MANAGEMENT REPORT
- Generated on 2026-11-06
+ Generated on 2026-11-07
 ==================================================================
 
 BUSINESS OVERVIEW
@@ -64,9 +64,10 @@ SERVICE REQUESTS
   By status: Submitted: 2, Approved: 3, In Progress: 3, Completed: 6, Cancelled: 1
   Completed value (earned)  : INR 49,500.00
   Pipeline value (not done) : INR 177,000.00
-  Overdue requests          : 2
+  Overdue requests          : 3
   ID      Customer  Service  Due date    Status
   ------  --------  -------  ----------  -----------
+  RQ-005  CU-005    SV-005   2026-11-06  In Progress
   RQ-006  CU-006    SV-006   2026-11-02  In Progress
   RQ-008  CU-008    SV-008   2026-11-03  Approved
 

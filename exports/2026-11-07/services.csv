@@ -1,0 +1,11 @@
+﻿id,name,category,description,price,delivery_days,status,created
+SV-001,Website Development,Development,Responsive business website development,15000.00,15,Active,2026-11-01
+SV-002,UI UX Design,Design,Website and mobile app interface design,8000.00,7,Active,2026-11-01
+SV-003,Cloud Setup,Cloud,Basic cloud deployment and configuration,6000.00,5,Paused,2026-11-02
+SV-004,Mobile App Development,Development,Android and iOS app development (MVP),45000.00,40,Active,2026-09-10
+SV-005,Data Analytics Dashboard,Data,Interactive dashboard built from CSV or Excel data,20000.00,12,Active,2026-09-10
+SV-006,Cyber Security Audit,Security,Basic vulnerability assessment and report,18000.00,10,Active,2026-09-15
+SV-007,IT Consulting Session,Consulting,Two-hour technology and digital strategy session,3000.00,2,Active,2026-09-15
+SV-008,Social Media Marketing,Marketing,Monthly social media content and campaign management,9000.00,30,Active,2026-09-20
+SV-009,SEO Optimization,Marketing,Search engine optimization for business websites,7000.00,20,Paused,2026-09-20
+SV-010,Legacy Intranet Portal,Development,Old intranet portal maintenance (no longer offered),12000.00,25,Retired,2026-06-01
